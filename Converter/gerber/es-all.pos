@@ -1,0 +1,23 @@
+### Module positions - created on 2020/10/03 12:09:43 ###
+### Printed by Pcbnew version kicad (5.1.2)-1
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val               Package                                     PosX       PosY       Rot  Side
+C1        2.2u              C_0603_1608Metric                       157.1500   -85.0500  180.0000  top
+C2        0.1u              C_0603_1608Metric                       167.3880   -95.7500  180.0000  top
+C3        0.01u             C_0603_1608Metric                       155.7500   -91.6500  270.0000  top
+C4        2.2u              C_0603_1608Metric                       157.9500   -91.6700  270.0000  top
+C5        0.1u              C_0603_1608Metric                       170.0880   -84.7000    0.0000  top
+C6        0.1u              C_0603_1608Metric                       169.9000   -96.4875  270.0000  top
+C7        0.1u              C_0603_1608Metric                       163.3000   -96.4875  270.0000  top
+D1        LED               D_0603_1608Metric                       165.3120   -82.6000    0.0000  top
+D2        LED               D_0603_1608Metric                       170.0880   -82.5000    0.0000  top
+D3        LED               D_0603_1608Metric                       174.8120   -82.5000    0.0000  top
+R1        10k               R_0603_1608Metric                       167.4120   -97.3500    0.0000  top
+R2        10k               R_0603_1608Metric                       159.7000   -91.6700  270.0000  top
+R3        1k                R_0603_1608Metric                       165.3120   -80.9000    0.0000  top
+R4        1k                R_0603_1608Metric                       170.0880   -80.9000    0.0000  top
+R5        1k                R_0603_1608Metric                       174.7880   -80.9000    0.0000  top
+U1        LD3985M33R_SOT23  SOT-23-5                                156.8500   -87.8500  270.0000  top
+U2        STM32F301K8Ux     QFN-32-1EP_5x5mm_P0.5mm_EP3.45x3.45mm   165.5000   -89.3000   90.0000  top
+## End

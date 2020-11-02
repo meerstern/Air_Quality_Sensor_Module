@@ -1,0 +1,10 @@
+"ID";"参照記号";"パッケージ";"数";"名称";"Supplier and ref";
+1;"U2";"ZMOD4410";1;"ZMOD4410";;;
+2;"R6";"R_0603_1608Metric";1;"10";;;
+3;"R2,R1";"R_0603_1608Metric";2;"4.7k";;;
+4;"REF2,REF1";"MountingHole_3.2mm_M3";2;"MountingHole_3.2mm_M3";;;
+5;"U1";"HS300X";1;"HS300X";;;
+6;"TP1";"TestPoint_THTPad_D1.0mm_Drill0.5mm";1;"TestPoint";;;
+7;"R3";"R_0603_1608Metric";1;"200k";;;
+8;"J1";"GROVE";1;"Conn_01x04";;;
+9;"C5,C4,C3,C2,C1";"C_0603_1608Metric";5;"0.1u";;;

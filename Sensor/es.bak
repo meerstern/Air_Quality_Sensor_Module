@@ -1,0 +1,344 @@
+EESchema Schematic File Version 4
+LIBS:es-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Environmental Sensor Module"
+Date "2020-06-08"
+Rev "v1.1"
+Comp "Crescent"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L idt_sensor:HS300X U1
+U 1 1 5EAA029A
+P 5675 2925
+F 0 "U1" H 6053 2771 50  0000 L CNN
+F 1 "HS300X" H 6053 2680 50  0000 L CNN
+F 2 "idt_sensor:HS300X" H 5675 2925 50  0001 C CNN
+F 3 "" H 5675 2925 50  0001 C CNN
+	1    5675 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L idt_sensor:ZMOD4410 U2
+U 1 1 5EAA04A0
+P 7300 2875
+F 0 "U2" H 8100 1950 50  0000 L CNN
+F 1 "ZMOD4410" H 7900 2050 50  0000 L CNN
+F 2 "idt_sensor:ZMOD4410" H 7300 2875 50  0001 C CNN
+F 3 "" H 7300 2875 50  0001 C CNN
+	1    7300 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5EAA195D
+P 1850 1775
+F 0 "J1" H 1930 1767 50  0000 L CNN
+F 1 "Conn_01x04" H 1930 1676 50  0000 L CNN
+F 2 "GroveCon:GROVE" H 1850 1775 50  0001 C CNN
+F 3 "~" H 1850 1775 50  0001 C CNN
+	1    1850 1775
+	-1   0    0    -1  
+$EndComp
+Text Notes 7575 4525 0    79   ~ 16
+CO2
+Text Notes 5375 4525 0    79   ~ 16
+Temp/Humd
+Text Label 2050 1675 0    39   ~ 0
+SCL
+Text Label 2050 1775 0    39   ~ 0
+SDA
+Text Label 2050 1975 0    39   ~ 0
+GND
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5EAABA26
+P 3000 1825
+F 0 "#PWR01" H 3000 1675 50  0001 C CNN
+F 1 "+3.3V" H 3015 1998 50  0000 C CNN
+F 2 "" H 3000 1825 50  0001 C CNN
+F 3 "" H 3000 1825 50  0001 C CNN
+	1    3000 1825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1875 3000 1825
+$Comp
+L power:+3.3V #PWR02
+U 1 1 5EAB8740
+P 5350 3450
+F 0 "#PWR02" H 5350 3300 50  0001 C CNN
+F 1 "+3.3V" H 5365 3623 50  0000 C CNN
+F 2 "" H 5350 3450 50  0001 C CNN
+F 3 "" H 5350 3450 50  0001 C CNN
+	1    5350 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5EACA05C
+P 5300 3000
+F 0 "C1" H 5415 3046 50  0000 L CNN
+F 1 "0.1u" H 5415 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5338 2850 50  0001 C CNN
+F 3 "~" H 5300 3000 50  0001 C CNN
+	1    5300 3000
+	1    0    0    -1  
+$EndComp
+Text Label 5300 3150 0    39   ~ 0
+GND
+Wire Wire Line
+	5725 2825 5725 2725
+Wire Wire Line
+	5725 2725 5300 2725
+Wire Wire Line
+	5300 2725 5300 2850
+$Comp
+L Device:C C2
+U 1 1 5EACCB90
+P 5350 3725
+F 0 "C2" H 5465 3771 50  0000 L CNN
+F 1 "0.1u" H 5465 3680 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5388 3575 50  0001 C CNN
+F 3 "~" H 5350 3725 50  0001 C CNN
+	1    5350 3725
+	1    0    0    -1  
+$EndComp
+Text Label 5350 3875 0    39   ~ 0
+GND
+Wire Wire Line
+	5350 3450 5350 3525
+Wire Wire Line
+	5350 3525 5725 3525
+Wire Wire Line
+	5725 3525 5725 3425
+Connection ~ 5350 3525
+Wire Wire Line
+	5350 3525 5350 3575
+Text Label 5925 3550 0    39   ~ 0
+GND
+Wire Wire Line
+	5925 3425 5925 3550
+Text Label 5925 2825 1    39   ~ 0
+SCL
+Text Label 5825 2825 1    39   ~ 0
+SDA
+Text Label 7275 2650 0    39   ~ 0
+GND
+Wire Wire Line
+	7600 2775 7600 2650
+Wire Wire Line
+	7600 2650 7275 2650
+Wire Wire Line
+	7600 2650 7800 2650
+Wire Wire Line
+	7800 2650 7800 2775
+Connection ~ 7600 2650
+Wire Wire Line
+	7800 2650 8350 2650
+Wire Wire Line
+	8350 2650 8350 3125
+Wire Wire Line
+	8350 3125 8200 3125
+Connection ~ 7800 2650
+$Comp
+L power:+3.3V #PWR05
+U 1 1 5EAD9D0C
+P 6950 2975
+F 0 "#PWR05" H 6950 2825 50  0001 C CNN
+F 1 "+3.3V" H 6965 3148 50  0000 C CNN
+F 2 "" H 6950 2975 50  0001 C CNN
+F 3 "" H 6950 2975 50  0001 C CNN
+	1    6950 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3125 6950 3125
+Wire Wire Line
+	6950 3125 6950 2975
+Wire Wire Line
+	7200 3325 6950 3325
+Wire Wire Line
+	6950 3325 6950 3125
+Connection ~ 6950 3125
+$Comp
+L Device:C C4
+U 1 1 5EADE6A2
+P 6950 3500
+F 0 "C4" H 7065 3546 50  0000 L CNN
+F 1 "0.1u" H 7065 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6988 3350 50  0001 C CNN
+F 3 "~" H 6950 3500 50  0001 C CNN
+	1    6950 3500
+	1    0    0    -1  
+$EndComp
+Text Label 6950 3650 0    39   ~ 0
+GND
+Wire Wire Line
+	6950 3350 6950 3325
+Connection ~ 6950 3325
+$Comp
+L power:+3.3V #PWR06
+U 1 1 5EAE034C
+P 8650 3200
+F 0 "#PWR06" H 8650 3050 50  0001 C CNN
+F 1 "+3.3V" H 8665 3373 50  0000 C CNN
+F 2 "" H 8650 3200 50  0001 C CNN
+F 3 "" H 8650 3200 50  0001 C CNN
+	1    8650 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 3250 8650 3225
+$Comp
+L Device:C C5
+U 1 1 5EAE1F09
+P 8650 3400
+F 0 "C5" H 8765 3446 50  0000 L CNN
+F 1 "0.1u" H 8765 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8688 3250 50  0001 C CNN
+F 3 "~" H 8650 3400 50  0001 C CNN
+	1    8650 3400
+	1    0    0    -1  
+$EndComp
+Text Label 8650 3550 0    39   ~ 0
+GND
+$Comp
+L power:+3.3V #PWR04
+U 1 1 5EAE3B83
+P 6525 2825
+F 0 "#PWR04" H 6525 2675 50  0001 C CNN
+F 1 "+3.3V" H 6540 2998 50  0000 C CNN
+F 2 "" H 6525 2825 50  0001 C CNN
+F 3 "" H 6525 2825 50  0001 C CNN
+	1    6525 2825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5EAE4E42
+P 6525 3050
+F 0 "R3" H 6595 3096 50  0000 L CNN
+F 1 "200k" H 6595 3005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6455 3050 50  0001 C CNN
+F 3 "~" H 6525 3050 50  0001 C CNN
+	1    6525 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5EAE6414
+P 6525 3400
+F 0 "C3" H 6640 3446 50  0000 L CNN
+F 1 "0.1u" H 6640 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6563 3250 50  0001 C CNN
+F 3 "~" H 6525 3400 50  0001 C CNN
+	1    6525 3400
+	1    0    0    -1  
+$EndComp
+Text Label 6525 3550 0    39   ~ 0
+GND
+Wire Wire Line
+	6525 3200 6525 3225
+Wire Wire Line
+	6525 2900 6525 2825
+Wire Wire Line
+	7200 3225 6525 3225
+Connection ~ 6525 3225
+Wire Wire Line
+	6525 3225 6525 3250
+Text Label 7600 3725 3    39   ~ 0
+SCL
+Text Label 7700 3725 3    39   ~ 0
+SDA
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5EAFA78C
+P 7800 3950
+F 0 "TP1" H 7858 4068 50  0000 L CNN
+F 1 "TestPoint" H 7858 3977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8000 3950 50  0001 C CNN
+F 3 "~" H 8000 3950 50  0001 C CNN
+	1    7800 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7800 3950 7800 3725
+Wire Wire Line
+	8200 3225 8650 3225
+Connection ~ 8650 3225
+Wire Wire Line
+	8650 3225 8650 3200
+$Comp
+L Device:R R1
+U 1 1 5EB40F68
+P 5600 1950
+F 0 "R1" H 5670 1996 50  0000 L CNN
+F 1 "4.7k" H 5670 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5530 1950 50  0001 C CNN
+F 3 "~" H 5600 1950 50  0001 C CNN
+	1    5600 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5EB40F6F
+P 5925 1950
+F 0 "R2" H 5995 1996 50  0000 L CNN
+F 1 "4.7k" H 5995 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5855 1950 50  0001 C CNN
+F 3 "~" H 5925 1950 50  0001 C CNN
+	1    5925 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1675 5600 1725
+Wire Wire Line
+	5600 1725 5925 1725
+Wire Wire Line
+	5925 1725 5925 1800
+Connection ~ 5600 1725
+Wire Wire Line
+	5600 1725 5600 1800
+Wire Wire Line
+	5925 2100 5925 2200
+Wire Wire Line
+	5600 2100 5600 2200
+$Comp
+L power:+3.3V #PWR03
+U 1 1 5EB49FB9
+P 5600 1675
+F 0 "#PWR03" H 5600 1525 50  0001 C CNN
+F 1 "+3.3V" H 5615 1848 50  0000 C CNN
+F 2 "" H 5600 1675 50  0001 C CNN
+F 3 "" H 5600 1675 50  0001 C CNN
+	1    5600 1675
+	1    0    0    -1  
+$EndComp
+Text Label 5600 2200 3    39   ~ 0
+SCL
+Text Label 5925 2200 3    39   ~ 0
+SDA
+$Comp
+L Device:R R6
+U 1 1 5EB71D79
+P 2725 1875
+F 0 "R6" H 2795 1921 50  0000 L CNN
+F 1 "10" H 2795 1830 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2655 1875 50  0001 C CNN
+F 3 "~" H 2725 1875 50  0001 C CNN
+	1    2725 1875
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2050 1875 2575 1875
+Wire Wire Line
+	2875 1875 3000 1875
+$EndSCHEMATC

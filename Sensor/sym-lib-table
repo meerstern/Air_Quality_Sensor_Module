@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name idt_sensor)(type Legacy)(uri ${KIPRJMOD}/idt_sensor.lib)(options "")(descr ""))
+  (lib (name LPS22XX)(type Legacy)(uri ${KIPRJMOD}/LPS22XX.lib)(options "")(descr ""))
+)

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name idt_sensor)(type KiCad)(uri ${KIPRJMOD}/idt_sensor.pretty)(options "")(descr ""))
+  (lib (name GroveCon)(type KiCad)(uri ${KIPRJMOD}/GroveCon.pretty)(options "")(descr ""))
+)
