@@ -1,4 +1,4 @@
-# エアクオリティーセンサ基板  
+# エアクオリティセンサ基板  
 Air_Quality_Sensor_Module
 
 ## 概要 
