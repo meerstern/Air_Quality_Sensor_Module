@@ -8,11 +8,15 @@ Air_Quality_Sensor_Module
   * 計算アルゴリズムはルネサスエレクトロニクスの学習済みニューラルネットワークを使用したファームウェアを使用しています  
   * 学習済みニューラルネットワークにより従来よりも正確にCO2値（eCO2）を推定できます  
   * 専用変換基板のLEDでIAQ(IAQ:2以下 青、2-3:青、黄、3-4:黄、4-5:黄、赤、5以上:赤)を確認できます  
-  * 専用変換基板の読み出し方法はサンプルプログラム(Arduino、STM32、Node-Red)を参照してください  
+  * 専用変換基板の読み出し方法はサンプルプログラム(Arduino、Node-Red)を参照してください  
   * 専用変換基板から読み出せる値は下記の通りです  
   * 専用変換基板の値は浮動小数点から10倍もしくは100倍した値を16bit符号付データに変換しています  
-  * センサ基板、専用変換基板、センサ基板と変換基板を接続するGrove互換ケーブルを同梱しています  
+  * センサ基板と専用変換基板、Grove互換ケーブル1本を同梱しています  
+  * お手持ちの機器と変換基板を接続するGroveケーブルは同梱されていません  
   * 専用変換基板はGrove互換コネクタを搭載しており、3.3V~5V電源で駆動します  
+  
+  <img src="https://github.com/meerstern/Air_Quality_Sensor_Module/blob/main/Image/img1.JPG" width="360">
+  <img src="https://github.com/meerstern/Air_Quality_Sensor_Module/blob/main/Image/img2.JPG" width="360">
   
   |  項目  |  範囲  |  倍率  |
 | ---- | ---- | ---- |
@@ -28,9 +32,9 @@ Air_Quality_Sensor_Module
 *2 専用変換基板上での制約で最大1000ppm→327ppmとなっています  
       
 ## 注意 
- * 電源投入後、2~3分はキャリブレーションのため、温湿度以外の値は0です  
+ * 電源投入後、2~3分はキャリブレーションのため、温湿度以外の値は未定で、全LEDが点灯します  
  * 専用変換基板は約2秒周期で各センサの値を取得します  
- * ZMOD4401はヒータを内蔵するため、安定した電流を確保できる電源を使用してください(最大10mA)  
+ * ZMOD4401はヒータを内蔵するため、電流を確保できる電源を使用してください(最大10mA)  
  * 専用変換基板は5V対応しておりますが、センサ基板は3.3V専用です  
  * ZMOD4410に直接アクセスする場合はルネサスエレクトロニクス社にファームウェアの取得申請が必要です(法人・研究向け)  
  * ルネサスエレクトロニクス社の計算アルゴリズムは*.libもしくは*.aファイルのアセンブラ形式です  
@@ -38,4 +42,5 @@ Air_Quality_Sensor_Module
  
 [1]: https://www.idt.com/jp/ja/products/sensor-products/gas-sensors/zmod4410-indoor-air-quality-sensor-platform
 [2]: https://www.idt.com/us/ja/products/sensor-products/humidity-sensors/hs3001-high-performance-relative-humidity-and-temperature-sensor
+
 
