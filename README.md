@@ -18,6 +18,7 @@ Air_Quality_Sensor_Module
   <img src="https://github.com/meerstern/Air_Quality_Sensor_Module/blob/main/Image/img1.JPG" width="360">
   <img src="https://github.com/meerstern/Air_Quality_Sensor_Module/blob/main/Image/img2.JPG" width="360">
   
+   
   |  項目  |  範囲  |  倍率  |
 | ---- | ---- | ---- |
 |  温度  |  -40-125℃  |  100倍  |
@@ -28,9 +29,19 @@ Air_Quality_Sensor_Module
 |  EtOH  |  0.01-655ppm*1  |  100倍  |
 |  LogRcda  |  -  |  100倍  |      
  
+ *1 専用変換基板上での制約で最大1000ppm→655ppmとなっています  
+    
+ ドイツ環境庁（UBA）の屋内空気質（IAQ）基準
+ 
+  |  IAQ  |  レベル  |  LED  |
+| ---- | ---- | ---- |
+|  <2  |  非常に良い  |  青  |
+|  2~3  |  良い  |  青と黄  |
+|  3~4  |  中間  |  黄  |
+|  4~5  |  悪い  |  黄と赤  |
+|  5~  |  非常に悪い | 赤 |
+        
 
-*1 専用変換基板上での制約で最大1000ppm→655ppmとなっています  
-      
 ## 注意 
  * 電源投入後、2~3分はキャリブレーションのため、温湿度以外の値は未定で、全LEDが点灯します  
  * 専用変換基板は約2秒周期で各センサの値を取得します  
