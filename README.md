@@ -50,7 +50,7 @@ Air_Quality_Sensor_Module
  * ZMOD4401はヒータを内蔵するため、電流を確保できる電源を使用してください(最大10mA)  
  * 専用変換基板は5V対応しておりますが、センサ基板は3.3V専用です  
  * ZMOD4410に直接アクセスして使用する場合はルネサスエレクトロニクス社にファームウェアの取得申請が必要です(法人・研究向け)  
- * ルネサスエレクトロニクス社から提供される計算アルゴリズムは*.libもしくは*.aファイルのアセンブラ形式です  
+ * ルネサスエレクトロニクス社の計算アルゴリズムは*.libもしくは*.aファイルのバイナリ形式で提供されます    
  
 [1]: https://www.idt.com/jp/ja/products/sensor-products/gas-sensors/zmod4410-indoor-air-quality-sensor-platform
 [2]: https://www.idt.com/us/ja/products/sensor-products/humidity-sensors/hs3001-high-performance-relative-humidity-and-temperature-sensor
