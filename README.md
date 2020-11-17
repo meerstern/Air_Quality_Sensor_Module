@@ -8,7 +8,7 @@ Air_Quality_Sensor_Module
   * 計算アルゴリズムはメーカ提供の学習済みニューラルネットワークを使用したファームウェア(20/10/19リリース版)を使用しています  
   * 学習済みニューラルネットワークによって従来よりもより正確にCO2値（eCO2）を推定できます  
   * 専用変換基板のLEDでIAQ(IAQ:2以下 青、2-3:青、黄、3-4:黄、4-5:黄、赤、5以上:赤)を確認できます  
-  * 専用変換基板の読み出し方法はサンプルプログラム(Arduino、Node-Red)を参照してください  
+  * 専用変換基板の読み出し方法はサンプルプログラム(Arduino、[USBシリアルI2C変換基板][3]を使用したNode-Red)を参照してください  
   * 専用変換基板から読み出せる値は下記の通りです  
   * 専用変換基板の値は浮動小数点から10倍もしくは100倍した値を16bit符号無データ(温度のみ符号有)に変換しています  
   * センサ基板と専用変換基板、Grove互換ケーブル1本を同梱しています  
@@ -54,5 +54,6 @@ Air_Quality_Sensor_Module
  
 [1]: https://www.idt.com/jp/ja/products/sensor-products/gas-sensors/zmod4410-indoor-air-quality-sensor-platform
 [2]: https://www.idt.com/us/ja/products/sensor-products/humidity-sensors/hs3001-high-performance-relative-humidity-and-temperature-sensor
+[3]: https://github.com/meerstern/USBSerial_I2C_Converter
 
 
