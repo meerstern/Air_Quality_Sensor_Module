@@ -16,10 +16,11 @@ Air_Quality_Sensor_Module
   * センサ基板と専用変換基板、Grove互換ケーブル1本を同梱しています  
   * お手持ちの機器と変換基板を接続するGroveケーブルは同梱されていません  
   * 専用変換基板はGrove互換コネクタを搭載しており、3.3V~5V電源で駆動します  
+  * I2C接続の他、Uart9600bpsでセンサデータを受信できます  
   
   <img src="https://github.com/meerstern/Air_Quality_Sensor_Module/blob/main/Image/img1.JPG" width="360">
   <img src="https://github.com/meerstern/Air_Quality_Sensor_Module/blob/main/Image/img2.JPG" width="360">
-  
+　<img src="https://github.com/meerstern/Air_Quality_Sensor_Module/blob/main/Image/io.JPG" width="360">
    
   |  項目  |  範囲  |  倍率  |
 | ---- | ---- | ---- |
