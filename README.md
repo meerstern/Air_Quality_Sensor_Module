@@ -60,8 +60,8 @@ Air_Quality_Sensor_Module
  * 告知なしに仕様を変更する場合があります    
 
 ## 参考
- * 第三者機関による[CO2センサ性能評価レポート(PDF,英語のみ)][4] 
- 　レポートでは他のセンサよりもZMOD4410がCO2濃度に最も近い相関を示すことが報告されています  
+ * 第三者機関による[CO2センサ性能評価レポート(PDF,英語のみ)][4]  
+ レポートでは他のセンサよりもZMOD4410が実際のCO2濃度に最も近い相関を示すことが報告されています  
 
 [1]: https://www.idt.com/jp/ja/products/sensor-products/gas-sensors/zmod4410-indoor-air-quality-sensor-platform
 [2]: https://www.idt.com/us/ja/products/sensor-products/humidity-sensors/hs3001-high-performance-relative-humidity-and-temperature-sensor
