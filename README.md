@@ -59,13 +59,17 @@ Air_Quality_Sensor_Module
  * ルネサスエレクトロニクス社の計算アルゴリズムは*.libもしくは*.aファイルのバイナリ形式で提供されます  
  * 告知なしに仕様を変更する場合があります    
 
+
 ## 参考
  * 第三者機関による[CO2センサ性能評価レポート(PDF,英語のみ)][4]  
  レポートでは他のセンサよりもZMOD4410が実際のCO2濃度に最も近い相関を示すことが報告されています  
+
+## 販売サイト
+  * [スイッチサイエンス][5]
 
 [1]: https://www.idt.com/jp/ja/products/sensor-products/gas-sensors/zmod4410-indoor-air-quality-sensor-platform
 [2]: https://www.idt.com/us/ja/products/sensor-products/humidity-sensors/hs3001-high-performance-relative-humidity-and-temperature-sensor
 [3]: https://github.com/meerstern/USBSerial_I2C_Converter
 [4]: https://www.renesas.com/jp/ja/document/rep/ksi-report-algorithm-evaluation-eco2-tracking?language=en
-
+[5]: https://www.switch-science.com/products/6775
 
